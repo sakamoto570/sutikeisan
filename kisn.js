@@ -24,7 +24,7 @@ class kisn_ui {
       let  input_number = document.querySelector("#box").value;
       let result2 = this.kisn.nibun_write(input_number);
       let result = this.kisn.nibunhou();
-      this.result2.textContent = "計算回数: " + result2[0]+ " 回　"+" 現在の値: "+result2[1];
+      this.result2.textContent = "二分法　"+"計算回数: " + result2[0]+ " 回　"+" 現在の値: "+result2[1];
       this.result.textContent =
         "近似値：" +
         result[0]  +
@@ -37,7 +37,7 @@ class kisn_ui {
       let  input_number = document.querySelector("#box").value;
       let result2 = this.kisn.nyuton_write(input_number);
       let result = this.kisn.nyutonhou();
-      this.result2.textContent = "計算回数: " + result2[0]+ " 回　"+" 現在の値: "+result2[1];
+      this.result2.textContent = "ニュートン法 "+"計算回数: " + result2[0]+ " 回　"+" 現在の値: "+result2[1];
       this.result.textContent =
         "近似値：" +
         result[0]  +
@@ -77,7 +77,6 @@ class kisn {
    this.b = 0.0;
    this.c = 0.0;
    this.EPS = 0.0001
-   this.times = 10000; // startボタンが押された際の打点数
    this.all_number = 0;  // 計算回数
  }
 
